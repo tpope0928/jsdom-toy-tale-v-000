@@ -64,7 +64,7 @@ function likes(e) {
 
     },
     body: JSON.stringify({
-      "likes": more 
+      "likes": more
     })
   })
   .then(res => res.json())
@@ -75,7 +75,7 @@ function likes(e) {
 
 function renderToys(toy) {
   let h2 = document.createElement('h2')
-  h2.innerText = toy.name 
+  h2.innerText = toy.name
 
   let img = document.createElement('img')
   img.setAttribute('src', toy.image)
@@ -100,7 +100,7 @@ function renderToys(toy) {
 }
 
 addBtn.addEventListener('click', () => {
-  addToy = !addToy 
+  addToy = !addToy
   if (addToy) {
     toyForm.style.display = 'block'
     toyForm.addEventListener('submit', event => {
@@ -114,7 +114,7 @@ addBtn.addEventListener('click', () => {
 
 
 
-// get toys 
+// get toys
 
 getToys().then(toys => {
   toys.forEach(toy => {
